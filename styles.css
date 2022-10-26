@@ -1,0 +1,92 @@
+body {
+    background: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    text-align: center;
+    color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.title-el {
+    margin-left: 5px;
+}
+
+.pts-bg {
+    font-size: 90px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    width: 155px;
+    height: 120px;
+    border: 3px solid #EEEEEE;
+    color: #F94F6D;
+    background-size: cover;
+    background: #080001;
+    border-radius: 5px
+}
+
+#playerone-score, #playertwo-score  {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#grid {
+    width: 400px;
+    height: 300px;
+    display: grid;
+    column-gap: 3px;
+    row-gap: 2px;
+    grid-template-columns: auto auto auto auto;
+    margin: 20px auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 20px;
+        font-weight: 35;
+        line-height: 18px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .pts-bg {
+        font-size: 45px;
+        padding: 4px;
+        display: flex;
+        justify-content: space-around;
+        width: 75px;
+        height: 60px;
+        border: 1px solid #EEEEEE;
+        color: #F94F6D;
+        background-size: cover;
+        background: #080001;
+        border-radius: 5px
+    }
+
+    #grid {
+        width: 200px;
+        height: 150px;
+        grid-template-columns: auto auto auto;
+    }
+
+    img {
+        max-width: 65px;
+        max-height: 65px;
+    }
+}
